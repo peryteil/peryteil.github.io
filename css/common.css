@@ -59,3 +59,26 @@ body {
 .btn-orange:active{
   box-shadow: 0 4px 0 #e66000;
 }
+
+.btn-grey{
+  background-color: #F2F4F6;
+  box-shadow: 0 14px 0 #DFE1E2;
+  color: #444;
+}
+.btn-grey:active{
+  box-shadow: 0 4px 0 #DFE1E2;
+}
+.btn-green{
+  background-color: #32bfa1;
+  box-shadow: 0 14px 0 #299a82;
+  color: #fff;
+}
+.btn-green:active{
+  box-shadow: 0 4px 0 #299a82;
+}
+.btn-small{
+  max-width: 350px;
+  height: 70px;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
