@@ -64,6 +64,7 @@ body {
   background-color: #F2F4F6;
   box-shadow: 0 14px 0 #DFE1E2;
   color: #444;
+  line-height: 1.5;
 }
 .btn-grey:active{
   box-shadow: 0 4px 0 #DFE1E2;
