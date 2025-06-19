@@ -77,6 +77,10 @@
   <time class="dt-published" datetime="2025-06-19T09:57:35.000Z" itemprop="datePublished">2025-06-19</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%ED%95%99%EC%8A%B5%EC%A0%95%EB%A6%AC/">-학습정리</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -93,11 +97,540 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <p>아래는 <strong>텍스트 관련 HTML 태그들</strong>에 대한 주요 개념 정리입니다. 각 분류별로 태그의 역할과 예시를 간단하게 정리해드릴게요.</p>
+<hr>
+<h2 id="📘-텍스트-관련-태그-정리"><a href="#📘-텍스트-관련-태그-정리" class="headerlink" title="📘 텍스트 관련 태그 정리"></a>📘 텍스트 관련 태그 정리</h2><h3 id="1-✅-텍스트를-덩어리로-묶어-주는-태그-Block-요소"><a href="#1-✅-텍스트를-덩어리로-묶어-주는-태그-Block-요소" class="headerlink" title="1. ✅ 텍스트를 덩어리로 묶어 주는 태그 (Block 요소)"></a>1. ✅ 텍스트를 <strong>덩어리로 묶어 주는 태그 (Block 요소)</strong></h3><p>이러한 태그는 새로운 줄에서 시작하며, 전체 줄을 차지하는 <strong>블록 레벨 요소</strong>입니다.</p>
+<table>
+<thead>
+<tr>
+<th>태그</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;p&gt;</code></td>
+<td>문단(paragraph)을 나타냄</td>
+</tr>
+<tr>
+<td><code>&lt;div&gt;</code></td>
+<td>구역을 묶는 용도로 사용됨</td>
+</tr>
+<tr>
+<td><code>&lt;h1&gt;~&lt;h6&gt;</code></td>
+<td>제목을 나타냄 (<code>h1</code>이 가장 큼)</td>
+</tr>
+<tr>
+<td><code>&lt;blockquote&gt;</code></td>
+<td>인용문을 표현함</td>
+</tr>
+<tr>
+<td><code>&lt;pre&gt;</code></td>
+<td>공백&#x2F;줄바꿈을 유지한 채 출력</td>
+</tr>
+</tbody></table>
+<p>📌 예시:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>제목입니다<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>이것은 문단입니다.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">blockquote</span>&gt;</span>여기에 인용문을 작성합니다.<span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="2-✅-텍스트를-한-줄로-표시하는-태그-Inline-요소"><a href="#2-✅-텍스트를-한-줄로-표시하는-태그-Inline-요소" class="headerlink" title="2. ✅ 텍스트를 한 줄로 표시하는 태그 (Inline 요소)"></a>2. ✅ 텍스트를 <strong>한 줄로 표시하는 태그 (Inline 요소)</strong></h3><p>이 태그들은 블록 내부에 포함되며, 줄 바꿈 없이 <strong>내용 일부에 적용</strong>됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>태그</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;span&gt;</code></td>
+<td>텍스트의 일부를 묶을 때 사용</td>
+</tr>
+<tr>
+<td><code>&lt;strong&gt;</code></td>
+<td>중요한 텍스트 (굵게 표시)</td>
+</tr>
+<tr>
+<td><code>&lt;em&gt;</code></td>
+<td>강조 (기울임)</td>
+</tr>
+<tr>
+<td><code>&lt;a&gt;</code></td>
+<td>하이퍼링크 설정</td>
+</tr>
+<tr>
+<td><code>&lt;mark&gt;</code></td>
+<td>형광펜 효과 (강조)</td>
+</tr>
+<tr>
+<td><code>&lt;br&gt;</code></td>
+<td>줄 바꿈 (단독 사용)</td>
+</tr>
+</tbody></table>
+<p>📌 예시:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>이 <span class="tag">&lt;<span class="name">strong</span>&gt;</span>문장<span class="tag">&lt;/<span class="name">strong</span>&gt;</span>은 <span class="tag">&lt;<span class="name">em</span>&gt;</span>강조<span class="tag">&lt;/<span class="name">em</span>&gt;</span>되어 있습니다.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="3-✅-목록을-만드는-태그"><a href="#3-✅-목록을-만드는-태그" class="headerlink" title="3. ✅ 목록을 만드는 태그"></a>3. ✅ <strong>목록을 만드는 태그</strong></h3><table>
+<thead>
+<tr>
+<th>태그</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;ul&gt;</code></td>
+<td>순서 없는 목록 (●, ○ 등으로 표시됨)</td>
+</tr>
+<tr>
+<td><code>&lt;ol&gt;</code></td>
+<td>순서 있는 목록 (숫자, 알파벳 등으로)</td>
+</tr>
+<tr>
+<td><code>&lt;li&gt;</code></td>
+<td>각 목록 항목</td>
+</tr>
+<tr>
+<td><code>&lt;dl&gt;</code></td>
+<td>설명 목록 (definition list)</td>
+</tr>
+<tr>
+<td><code>&lt;dt&gt;</code></td>
+<td>용어 제목</td>
+</tr>
+<tr>
+<td><code>&lt;dd&gt;</code></td>
+<td>설명 내용</td>
+</tr>
+</tbody></table>
+<p>📌 예시:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>사과<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>바나나<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>HTML 배우기<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>CSS 배우기<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="4-✅-표를-만드는-태그"><a href="#4-✅-표를-만드는-태그" class="headerlink" title="4. ✅ 표를 만드는 태그"></a>4. ✅ <strong>표를 만드는 태그</strong></h3><table>
+<thead>
+<tr>
+<th>태그</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;table&gt;</code></td>
+<td>표 전체 구조</td>
+</tr>
+<tr>
+<td><code>&lt;tr&gt;</code></td>
+<td>행 (table row)</td>
+</tr>
+<tr>
+<td><code>&lt;th&gt;</code></td>
+<td>헤더 셀 (굵고 중앙 정렬됨)</td>
+</tr>
+<tr>
+<td><code>&lt;td&gt;</code></td>
+<td>일반 셀 (table data)</td>
+</tr>
+<tr>
+<td><code>&lt;caption&gt;</code></td>
+<td>표 제목</td>
+</tr>
+<tr>
+<td><code>&lt;thead&gt;</code> &#x2F; <code>&lt;tbody&gt;</code> &#x2F; <code>&lt;tfoot&gt;</code></td>
+<td>표의 구조적 구분</td>
+</tr>
+</tbody></table>
+<p>📌 예시:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">caption</span>&gt;</span>학생 점수표<span class="tag">&lt;/<span class="name">caption</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">th</span>&gt;</span>이름<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">th</span>&gt;</span>점수<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>홍길동<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>95<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="🧩-핵심-요약"><a href="#🧩-핵심-요약" class="headerlink" title="🧩 핵심 요약"></a>🧩 핵심 요약</h2><table>
+<thead>
+<tr>
+<th>구분</th>
+<th>대표 태그</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>블록 요소</td>
+<td><code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>~<code>&lt;h6&gt;</code></td>
+<td>줄바꿈, 전체 너비 차지</td>
+</tr>
+<tr>
+<td>인라인 요소</td>
+<td><code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code></td>
+<td>줄 안에서 강조 또는 링크</td>
+</tr>
+<tr>
+<td>목록</td>
+<td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td>
+<td>아이템 나열</td>
+</tr>
+<tr>
+<td>표</td>
+<td><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code></td>
+<td>데이터 시각화에 적합</td>
+</tr>
+</tbody></table>
+<hr>
+<p>아래는 <strong>HTML에서 이미지와 하이퍼링크 관련 주요 요소들</strong>에 대한 정리입니다. 각 항목은 태그 설명, 속성, 예시와 함께 구성되어 있습니다.</p>
+<hr>
+<h2 id="🖼️-이미지와-하이퍼링크-정리"><a href="#🖼️-이미지와-하이퍼링크-정리" class="headerlink" title="🖼️ 이미지와 하이퍼링크 정리"></a>🖼️ 이미지와 하이퍼링크 정리</h2><hr>
+<h3 id="1-✅-이미지-삽입"><a href="#1-✅-이미지-삽입" class="headerlink" title="1. ✅ 이미지 삽입: &lt;img&gt;"></a>1. ✅ 이미지 삽입: <code>&lt;img&gt;</code></h3><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>src</code></td>
+<td>이미지 경로 (URL 또는 상대&#x2F;절대 경로)</td>
+</tr>
+<tr>
+<td><code>alt</code></td>
+<td>이미지가 로딩되지 않거나 시각장애인을 위한 대체 텍스트</td>
+</tr>
+<tr>
+<td><code>width</code>&#x2F;<code>height</code></td>
+<td>이미지 크기 조절</td>
+</tr>
+</tbody></table>
+<p>📌 예시:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;apple.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;사과 이미지&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>💡 <code>&lt;img&gt;</code> 태그는 **빈 태그(self-closing)**로, 닫는 태그가 필요 없습니다.</p>
+</blockquote>
+<hr>
+<h3 id="2-✅-링크-만들기"><a href="#2-✅-링크-만들기" class="headerlink" title="2. ✅ 링크 만들기: &lt;a&gt;"></a>2. ✅ 링크 만들기: <code>&lt;a&gt;</code></h3><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>href</code></td>
+<td>링크 대상 주소</td>
+</tr>
+<tr>
+<td><code>target</code></td>
+<td>링크를 열 위치 (<code>_blank</code>, <code>_self</code> 등)</td>
+</tr>
+<tr>
+<td><code>download</code></td>
+<td>클릭 시 파일 다운로드 유도</td>
+</tr>
+</tbody></table>
+<p>📌 예시:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.example.com&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>예제 사이트로 이동<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>💡 <code>&lt;a&gt;</code> 안에 <code>&lt;img&gt;</code>를 넣으면 <strong>이미지를 클릭하면 이동하는 링크</strong>도 만들 수 있습니다.</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.example.com&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;banner.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;배너&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="3-✅-SVG-이미지"><a href="#3-✅-SVG-이미지" class="headerlink" title="3. ✅ SVG 이미지"></a>3. ✅ SVG 이미지</h3><p><strong>SVG(Scalable Vector Graphics)</strong> 는 벡터 기반의 이미지 포맷으로, 확대해도 깨지지 않으며 코드로 작성할 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>태그&#x2F;속성</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;svg&gt;</code></td>
+<td>SVG 이미지를 정의하는 루트 태그</td>
+</tr>
+<tr>
+<td><code>&lt;circle&gt;</code>, <code>&lt;rect&gt;</code>, <code>&lt;line&gt;</code>, <code>&lt;path&gt;</code> 등</td>
+<td>도형을 그리는 요소들</td>
+</tr>
+</tbody></table>
+<p>📌 간단한 예시:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">width</span>=<span class="string">&quot;100&quot;</span> <span class="attr">height</span>=<span class="string">&quot;100&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">circle</span> <span class="attr">cx</span>=<span class="string">&quot;50&quot;</span> <span class="attr">cy</span>=<span class="string">&quot;50&quot;</span> <span class="attr">r</span>=<span class="string">&quot;40&quot;</span> <span class="attr">fill</span>=<span class="string">&quot;orange&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>💡 SVG는 아이콘, 로고, 그래프 등에 많이 사용되며 CSS&#x2F;JS와도 연동 가능합니다.</p>
+</blockquote>
+<hr>
+<h3 id="4-✅-이미지-맵으로-이벤트-페이지-만들기"><a href="#4-✅-이미지-맵으로-이벤트-페이지-만들기" class="headerlink" title="4. ✅ 이미지 맵으로 이벤트 페이지 만들기: &lt;map&gt;, &lt;area&gt;"></a>4. ✅ 이미지 맵으로 이벤트 페이지 만들기: <code>&lt;map&gt;</code>, <code>&lt;area&gt;</code></h3><p><strong>이미지의 특정 영역에 링크를 걸기</strong> 위해 사용합니다.</p>
+<table>
+<thead>
+<tr>
+<th>태그</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;img usemap=&quot;#mapname&quot;&gt;</code></td>
+<td>맵을 적용할 이미지</td>
+</tr>
+<tr>
+<td><code>&lt;map name=&quot;mapname&quot;&gt;</code></td>
+<td>이미지 맵을 정의</td>
+</tr>
+<tr>
+<td><code>&lt;area&gt;</code></td>
+<td>클릭 가능한 영역 설정 (좌표 기반)</td>
+</tr>
+</tbody></table>
+<p>📌 예시:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;world-map.jpg&quot;</span> <span class="attr">usemap</span>=<span class="string">&quot;#worldmap&quot;</span> <span class="attr">width</span>=<span class="string">&quot;400&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">map</span> <span class="attr">name</span>=<span class="string">&quot;worldmap&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">area</span> <span class="attr">shape</span>=<span class="string">&quot;rect&quot;</span> <span class="attr">coords</span>=<span class="string">&quot;50,50,150,150&quot;</span> <span class="attr">href</span>=<span class="string">&quot;usa.html&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;USA&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">area</span> <span class="attr">shape</span>=<span class="string">&quot;circle&quot;</span> <span class="attr">coords</span>=<span class="string">&quot;300,200,30&quot;</span> <span class="attr">href</span>=<span class="string">&quot;korea.html&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;Korea&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">map</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>shape</code></td>
+<td><code>rect</code>, <code>circle</code>, <code>poly</code> 등 선택 가능</td>
+</tr>
+<tr>
+<td><code>coords</code></td>
+<td>영역 좌표 (픽셀 단위)</td>
+</tr>
+<tr>
+<td><code>href</code></td>
+<td>클릭 시 이동할 링크 주소</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 이미지 맵은 제품 상세 페이지, 위치 기반 링크 등에 활용됩니다.</p>
+</blockquote>
+<hr>
+<h2 id="📌-요약-정리"><a href="#📌-요약-정리" class="headerlink" title="📌 요약 정리"></a>📌 요약 정리</h2><table>
+<thead>
+<tr>
+<th>기능</th>
+<th>태그&#x2F;속성</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>이미지 삽입</td>
+<td><code>&lt;img src alt&gt;</code></td>
+<td>외부 이미지 삽입</td>
+</tr>
+<tr>
+<td>링크</td>
+<td><code>&lt;a href target&gt;</code></td>
+<td>텍스트나 이미지에 링크 연결</td>
+</tr>
+<tr>
+<td>SVG</td>
+<td><code>&lt;svg&gt;</code>, <code>&lt;circle&gt;</code> 등</td>
+<td>벡터 이미지 삽입</td>
+</tr>
+<tr>
+<td>이미지맵</td>
+<td><code>&lt;map&gt;</code>, <code>&lt;area&gt;</code></td>
+<td>이미지의 특정 영역에 링크 지정</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>폼 관련 태그들</strong>은 웹 페이지에서 사용자로부터 데이터를 입력받기 위해 사용되는 HTML 요소입니다. HTML 폼은 다양한 입력 요소를 제공하여, 사용자와 상호작용하는 웹 애플리케이션을 만들 수 있게 도와줍니다. 여기서는 <strong>폼 만들기</strong>, <strong>사용자 입력을 위한 <code>&lt;input&gt;</code> 태그</strong>, <strong><code>&lt;input&gt;</code> 태그의 다양한 속성</strong>, <strong>여러 데이터 나열해 보여 주기</strong>와 <strong>기타 폼 요소들</strong>을 다루겠습니다.</p>
+<hr>
+<h3 id="1-폼-만들기"><a href="#1-폼-만들기" class="headerlink" title="1. 폼 만들기"></a>1. <strong>폼 만들기</strong></h3><p><a target="_blank" rel="noopener" href="https://inpa.tistory.com/entry/HTML-%F0%9F%93%9A-%ED%8F%BCForm-%ED%83%9C%EA%B7%B8-%EC%A0%95%EB%A6%AC">폼 설명 블로그</a></p>
+<ul>
+<li><strong><code>&lt;form&gt;</code></strong>: 폼을 정의하는 태그입니다. 폼 내에는 사용자 입력을 받기 위한 다양한 요소들이 포함됩니다. 폼을 제출할 때 서버로 데이터를 전송할 수 있습니다. <code>action</code> 속성으로 데이터가 전송될 URL을, <code>method</code> 속성으로 HTTP 전송 방법을 지정합니다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;/submit&quot;</span> <span class="attr">method</span>=<span class="string">&quot;POST&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 폼 요소들 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>주요 속성</strong>:</p>
+<ul>
+<li><code>action</code>: 데이터를 전송할 URL을 지정합니다.</li>
+<li><code>method</code>: 데이터를 전송하는 방식을 지정합니다. (GET, POST 등)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="2-사용자-입력을-위한-태그"><a href="#2-사용자-입력을-위한-태그" class="headerlink" title="2. 사용자 입력을 위한 &lt;input&gt; 태그"></a>2. <strong>사용자 입력을 위한 <code>&lt;input&gt;</code> 태그</strong></h3><ul>
+<li><strong><code>&lt;input&gt;</code></strong>: 사용자가 데이터를 입력할 수 있는 요소를 생성합니다. <code>type</code> 속성에 따라 텍스트 박스, 체크박스, 라디오 버튼, 날짜 입력 등 다양한 입력 방식이 가능합니다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;name&quot;</span>&gt;</span>Name:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;name&quot;</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>주요 속성</strong>:</p>
+<ul>
+<li><code>type</code>: 입력의 종류를 정의합니다 (예: text, password, email, number, checkbox 등).</li>
+<li><code>id</code>: 입력 요소의 고유 식별자.</li>
+<li><code>name</code>: 서버로 전송될 데이터의 이름을 지정.</li>
+<li><code>value</code>: 기본값을 설정하거나 폼 제출 시 전달되는 값을 설정.</li>
+<li><code>placeholder</code>: 입력란에 기본 안내 텍스트를 제공.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="3-태그의-다양한-속성"><a href="#3-태그의-다양한-속성" class="headerlink" title="3. &lt;input&gt; 태그의 다양한 속성"></a>3. <strong><code>&lt;input&gt;</code> 태그의 다양한 속성</strong></h3><p><code>&lt;input&gt;</code> 태그는 다양한 <code>type</code> 속성을 사용하여 여러 형태의 데이터를 입력받을 수 있습니다. 주요 입력 유형은 다음과 같습니다:</p>
+<ul>
+<li><p><strong><code>type=&quot;text&quot;</code></strong>: 일반적인 텍스트 입력 필드.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Enter your username&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>type=&quot;password&quot;</code></strong>: 비밀번호 입력 필드 (입력한 내용이 숨겨집니다).</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Enter your password&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>type=&quot;email&quot;</code></strong>: 이메일 주소를 입력받는 필드. 유효한 이메일 형식만 허용됩니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">name</span>=<span class="string">&quot;email&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Enter your email&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>type=&quot;number&quot;</code></strong>: 숫자 입력 필드. 숫자만 입력 가능하며, <code>min</code>, <code>max</code> 속성으로 범위를 설정할 수 있습니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;number&quot;</span> <span class="attr">name</span>=<span class="string">&quot;age&quot;</span> <span class="attr">min</span>=<span class="string">&quot;18&quot;</span> <span class="attr">max</span>=<span class="string">&quot;100&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Enter your age&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>type=&quot;checkbox&quot;</code></strong>: 체크박스. 여러 개를 선택할 수 있습니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subscribe&quot;</span>&gt;</span> Subscribe to newsletter<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>type=&quot;radio&quot;</code></strong>: 라디오 버튼. 하나의 그룹에서 하나의 옵션만 선택할 수 있습니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;male&quot;</span>&gt;</span> Male<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;female&quot;</span>&gt;</span> Female<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>type=&quot;file&quot;</code></strong>: 파일 업로드 버튼. 사용자가 파일을 선택하여 업로드할 수 있게 합니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">name</span>=<span class="string">&quot;profile-picture&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>type=&quot;date&quot;</code></strong>: 날짜를 입력받는 필드.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;date&quot;</span> <span class="attr">name</span>=<span class="string">&quot;birthday&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>type=&quot;range&quot;</code></strong>: 슬라이더로 값을 선택하는 입력 필드.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;range&quot;</span> <span class="attr">name</span>=<span class="string">&quot;volume&quot;</span> <span class="attr">min</span>=<span class="string">&quot;0&quot;</span> <span class="attr">max</span>=<span class="string">&quot;100&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h3 id="4-여러-데이터-나열해-보여-주기"><a href="#4-여러-데이터-나열해-보여-주기" class="headerlink" title="4. 여러 데이터 나열해 보여 주기"></a>4. <strong>여러 데이터 나열해 보여 주기</strong></h3><p><strong><code>&lt;select&gt;</code></strong>: 드롭다운 메뉴를 생성하는 태그로, 사용자가 여러 옵션 중 하나를 선택할 수 있습니다. 각 옵션은 <code>&lt;option&gt;</code> 태그로 정의됩니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;country&quot;</span>&gt;</span>Select your country:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;country&quot;</span> <span class="attr">name</span>=<span class="string">&quot;country&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;usa&quot;</span>&gt;</span>USA<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;canada&quot;</span>&gt;</span>Canada<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;uk&quot;</span>&gt;</span>UK<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>주요 속성</strong>:</p>
+<ul>
+<li><code>name</code>: 선택된 값을 전송할 이름을 정의합니다.</li>
+<li><code>value</code>: 각 옵션의 값을 설정합니다.</li>
+<li><code>selected</code>: 기본으로 선택된 옵션을 설정합니다.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="5-기타-다양한-폼-요소들"><a href="#5-기타-다양한-폼-요소들" class="headerlink" title="5. 기타 다양한 폼 요소들"></a>5. <strong>기타 다양한 폼 요소들</strong></h3><ul>
+<li><p><strong><code>&lt;textarea&gt;</code></strong>: 다중 행 텍스트 입력 필드로 긴 텍스트를 입력할 때 사용됩니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;message&quot;</span>&gt;</span>Your Message:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">id</span>=<span class="string">&quot;message&quot;</span> <span class="attr">name</span>=<span class="string">&quot;message&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;4&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;50&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Enter your message here&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>&lt;button&gt;</code></strong>: 버튼을 정의하는 태그입니다. 버튼을 클릭했을 때 폼을 제출하거나, JavaScript 이벤트를 트리거할 수 있습니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span>Submit<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>&lt;label&gt;</code></strong>: 폼 요소에 레이블을 제공하는 태그로, <strong><code>for</code></strong> 속성을 사용하여 해당 폼 요소와 연결할 수 있습니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;username&quot;</span>&gt;</span>Username:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;username&quot;</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>&lt;fieldset&gt;</code></strong>: 폼 요소들을 그룹화하여 시각적으로 묶을 수 있습니다. 주로 **<code>&lt;legend&gt;</code>**와 함께 사용됩니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">legend</span>&gt;</span>Personal Information<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;name&quot;</span>&gt;</span>Name:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;name&quot;</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>&lt;legend&gt;</code></strong>: <strong><code>&lt;fieldset&gt;</code></strong> 내에서 해당 그룹의 제목을 나타냅니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">legend</span>&gt;</span>Login Information<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h3 id="요약"><a href="#요약" class="headerlink" title="요약"></a>요약</h3><ul>
+<li><strong><code>&lt;form&gt;</code></strong> 태그는 사용자로부터 데이터를 입력받기 위한 폼을 정의하며, 다양한 입력 요소(<code>input</code>, <code>textarea</code>, <code>select</code> 등)를 포함할 수 있습니다.</li>
+<li><strong><code>&lt;input&gt;</code></strong> 태그는 텍스트, 숫자, 비밀번호, 체크박스 등 다양한 형태로 데이터를 입력받을 수 있습니다.</li>
+<li><strong><code>&lt;select&gt;</code></strong> 태그와 <strong><code>&lt;textarea&gt;</code></strong> 태그를 사용하여 사용자 선택 옵션과 긴 텍스트 입력을 받을 수 있습니다.</li>
+<li><strong><code>&lt;button&gt;</code></strong> 과 <strong><code>&lt;label&gt;</code></strong>, <strong><code>&lt;fieldset&gt;</code></strong> 등을 활용하여 폼 요소를 구조적으로 구성하고, 사용자가 쉽게 상호작용할 수 있도록 디자인합니다.</li>
+</ul>
+<p>이 폼 관련 태그들을 사용하면 다양한 형태의 사용자 입력을 웹 페이지에서 쉽게 받을 수 있습니다.</p>
+<hr>
+<h3 id="실습"><a href="#실습" class="headerlink" title="실습"></a>실습</h3><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/ko/docs/Learn_web_development/Extensions/Forms/Your_first_form"><img src="https://developer.mozilla.org/ko/docs/Learn_web_development/Extensions/Forms/Your_first_form/form-sketch-low.jpg" alt="폼 만들기"></a></p>
+<hr>
+<p>난이도는 <strong>기초~중급</strong> 수준으로 구성되어 있으며, HTML 폼 구성 요소의 사용법을 스스로 익히고 복습하는 데 적합합니다.</p>
+<hr>
+<h2 id="📝-폼-관련-태그-문제-10선"><a href="#📝-폼-관련-태그-문제-10선" class="headerlink" title="📝 폼 관련 태그 문제 10선"></a>📝 폼 관련 태그 문제 10선</h2><h3 id="🔹-기초-문제-1-5"><a href="#🔹-기초-문제-1-5" class="headerlink" title="🔹 기초 문제 (1~5)"></a>🔹 기초 문제 (1~5)</h3><ol>
+<li><p><strong>사용자 이름과 이메일을 입력받는 폼을 만들어 보세요.</strong></p>
+<ul>
+<li><code>name</code>과 <code>email</code> 필드를 각각 <code>&lt;input type=&quot;text&quot;&gt;</code>, <code>&lt;input type=&quot;email&quot;&gt;</code>로 작성하세요.</li>
+<li>전송 버튼도 포함하세요.</li>
+</ul>
+</li>
+<li><p><strong>비밀번호와 비밀번호 확인 입력 필드를 추가해보세요.</strong></p>
+<ul>
+<li>두 개의 <code>&lt;input type=&quot;password&quot;&gt;</code> 필드를 생성하고, <code>placeholder</code>로 설명을 덧붙이세요.</li>
+</ul>
+</li>
+<li><p><strong>생년월일을 입력받을 수 있도록 <code>&lt;input type=&quot;date&quot;&gt;</code> 필드를 만들어보세요.</strong></p>
+</li>
+<li><p><strong>뉴스레터 수신 여부를 체크박스로 구현해보세요.</strong></p>
+<ul>
+<li>체크박스의 라벨은 “뉴스레터 수신에 동의합니다.”로 작성하세요.</li>
+</ul>
+</li>
+<li><p><strong>성별을 선택할 수 있는 라디오 버튼 2개를 만들어보세요.</strong></p>
+<ul>
+<li>예: 남자 &#x2F; 여자</li>
+<li><code>name</code> 속성은 동일하게 설정해야 함</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="🔹-중급-문제-6-10"><a href="#🔹-중급-문제-6-10" class="headerlink" title="🔹 중급 문제 (6~10)"></a>🔹 중급 문제 (6~10)</h3><ol start="6">
+<li><p><strong>국가를 선택할 수 있는 <code>&lt;select&gt;</code> 태그를 만들어보세요.</strong></p>
+<ul>
+<li>옵션: 대한민국, 미국, 일본</li>
+<li>대한민국이 기본 선택되도록 하세요.</li>
+</ul>
+</li>
+<li><p><strong>자기소개를 입력할 수 있는 <code>&lt;textarea&gt;</code> 필드를 만들어보세요.</strong></p>
+<ul>
+<li>최소 4줄, 40글자 너비 이상으로 설정</li>
+</ul>
+</li>
+<li><p><strong>파일 업로드 기능을 추가해보세요.</strong></p>
+<ul>
+<li>프로필 사진을 업로드할 수 있도록 <code>&lt;input type=&quot;file&quot;&gt;</code> 사용</li>
+</ul>
+</li>
+<li><p><strong>슬라이더로 음량을 조절하는 입력 필드를 만들어보세요.</strong></p>
+<ul>
+<li>최소값 0, 최대값 100</li>
+</ul>
+</li>
+<li><p><strong>전체 폼을 <code>&lt;fieldset&gt;</code>과 <code>&lt;legend&gt;</code>로 감싸고, 제목을 ‘회원가입 폼’으로 설정해보세요.</strong></p>
+</li>
+</ol>
+<ul>
+<li>이름, 이메일, 비밀번호, 제출 버튼 포함</li>
+</ul>
+<hr>
+<p>아래는 앞서 제공한 <strong>폼 관련 태그 문제 10개에 대한 정답 예시 코드</strong>입니다. 각 문제에 해당하는 HTML 코드 스니펫을 제공합니다.</p>
+<hr>
+<h2 id="✅-폼-관련-태그-문제-정답"><a href="#✅-폼-관련-태그-문제-정답" class="headerlink" title="✅ 폼 관련 태그 문제 정답"></a>✅ 폼 관련 태그 문제 정답</h2><h3 id="1-사용자-이름과-이메일을-입력받는-폼"><a href="#1-사용자-이름과-이메일을-입력받는-폼" class="headerlink" title="1. 사용자 이름과 이메일을 입력받는 폼"></a>1. 사용자 이름과 이메일을 입력받는 폼</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;name&quot;</span>&gt;</span>이름:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;name&quot;</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;email&quot;</span>&gt;</span>이메일:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">id</span>=<span class="string">&quot;email&quot;</span> <span class="attr">name</span>=<span class="string">&quot;email&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span>제출<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="2-비밀번호와-비밀번호-확인"><a href="#2-비밀번호와-비밀번호-확인" class="headerlink" title="2. 비밀번호와 비밀번호 확인"></a>2. 비밀번호와 비밀번호 확인</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">name</span>=<span class="string">&quot;pw&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;비밀번호 입력&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">name</span>=<span class="string">&quot;pw_check&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;비밀번호 확인&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="3-생년월일-입력-필드"><a href="#3-생년월일-입력-필드" class="headerlink" title="3. 생년월일 입력 필드"></a>3. 생년월일 입력 필드</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;birth&quot;</span>&gt;</span>생년월일:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;date&quot;</span> <span class="attr">id</span>=<span class="string">&quot;birth&quot;</span> <span class="attr">name</span>=<span class="string">&quot;birth&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="4-뉴스레터-수신-체크박스"><a href="#4-뉴스레터-수신-체크박스" class="headerlink" title="4. 뉴스레터 수신 체크박스"></a>4. 뉴스레터 수신 체크박스</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;newsletter&quot;</span>&gt;</span> 뉴스레터 수신에 동의합니다.</span><br><span class="line">  <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="5-성별-선택-라디오-버튼"><a href="#5-성별-선택-라디오-버튼" class="headerlink" title="5. 성별 선택 라디오 버튼"></a>5. 성별 선택 라디오 버튼</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;male&quot;</span>&gt;</span> 남자<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;female&quot;</span>&gt;</span> 여자<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="6-국가-선택-드롭다운"><a href="#6-국가-선택-드롭다운" class="headerlink" title="6. 국가 선택 드롭다운"></a>6. 국가 선택 드롭다운</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;country&quot;</span>&gt;</span>국가:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;country&quot;</span> <span class="attr">name</span>=<span class="string">&quot;country&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;kr&quot;</span> <span class="attr">selected</span>&gt;</span>대한민국<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;us&quot;</span>&gt;</span>미국<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;jp&quot;</span>&gt;</span>일본<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="7-자기소개-텍스트-영역"><a href="#7-자기소개-텍스트-영역" class="headerlink" title="7. 자기소개 텍스트 영역"></a>7. 자기소개 텍스트 영역</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;intro&quot;</span>&gt;</span>자기소개:<span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">id</span>=<span class="string">&quot;intro&quot;</span> <span class="attr">name</span>=<span class="string">&quot;intro&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;4&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;40&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="8-파일-업로드-입력"><a href="#8-파일-업로드-입력" class="headerlink" title="8. 파일 업로드 입력"></a>8. 파일 업로드 입력</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;photo&quot;</span>&gt;</span>프로필 사진:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">id</span>=<span class="string">&quot;photo&quot;</span> <span class="attr">name</span>=<span class="string">&quot;photo&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="9-슬라이더로-음량-조절"><a href="#9-슬라이더로-음량-조절" class="headerlink" title="9. 슬라이더로 음량 조절"></a>9. 슬라이더로 음량 조절</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;volume&quot;</span>&gt;</span>음량:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;range&quot;</span> <span class="attr">id</span>=<span class="string">&quot;volume&quot;</span> <span class="attr">name</span>=<span class="string">&quot;volume&quot;</span> <span class="attr">min</span>=<span class="string">&quot;0&quot;</span> <span class="attr">max</span>=<span class="string">&quot;100&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="10-fieldset과-legend로-묶은-회원가입-폼"><a href="#10-fieldset과-legend로-묶은-회원가입-폼" class="headerlink" title="10. fieldset과 legend로 묶은 회원가입 폼"></a>10. <code>fieldset</code>과 <code>legend</code>로 묶은 회원가입 폼</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">legend</span>&gt;</span>회원가입 폼<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;username&quot;</span>&gt;</span>이름:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;username&quot;</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;email&quot;</span>&gt;</span>이메일:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">id</span>=<span class="string">&quot;email&quot;</span> <span class="attr">name</span>=<span class="string">&quot;email&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;password&quot;</span>&gt;</span>비밀번호:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">id</span>=<span class="string">&quot;password&quot;</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span>가입하기<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/06/19/%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B4%80%EB%A0%A8-%ED%83%9C%EA%B7%B8-%EC%A0%95%EB%A6%AC/" data-id="cmc380zx5000hakw487eq4tk3" data-title="텍스트 관련 태그 정리" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/06/19/%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B4%80%EB%A0%A8-%ED%83%9C%EA%B7%B8-%EC%A0%95%EB%A6%AC/" data-id="cmc38rdeb000kp4w4e3v80gv8" data-title="텍스트 관련 태그 정리" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1158,7 +1691,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/06/19/HTML5%EC%99%80-%EC%8B%9C%EB%A7%A8%ED%8B%B1-%ED%83%9C%EA%B7%B8/" data-id="cmc380zww0001akw4617z3tec" data-title="HTML5와 시맨틱 태그" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/06/19/HTML5%EC%99%80-%EC%8B%9C%EB%A7%A8%ED%8B%B1-%ED%83%9C%EA%B7%B8/" data-id="cmc38rde10001p4w4f4l62x0n" data-title="HTML5와 시맨틱 태그" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1211,7 +1744,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/06/18/hello-world/" data-id="cmc380zx6000kakw45t4n04xx" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/06/18/hello-world/" data-id="cmc38rdea000hp4w45uaegt9e" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1335,7 +1868,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/06/18/%EC%B2%AB-%EB%B2%88%EC%A8%B0-%EA%B8%80/" data-id="cmc380zx4000gakw4c42a6i49" data-title="Hexo + GitHub Pages 블로그 만들기" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/06/18/%EC%B2%AB-%EB%B2%88%EC%A8%B0-%EA%B8%80/" data-id="cmc38rde9000gp4w4covkbqcm" data-title="Hexo + GitHub Pages 블로그 만들기" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1455,7 +1988,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/06/18/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%8B%9C%EC%9E%91/" data-id="cmc380zwt0000akw49ngmb67u" data-title="오늘 배운 CSS 정리" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/06/18/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%8B%9C%EC%9E%91/" data-id="cmc38rddy0000p4w4h75x3go1" data-title="오늘 배운 CSS 정리" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1479,7 +2012,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B0%9C%EB%B0%9C%EB%85%B8%ED%8A%B8/">개발노트</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%ED%95%99%EC%8A%B5%EC%A0%95%EB%A6%AC/">학습정리</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%ED%95%99%EC%8A%B5%EC%A0%95%EB%A6%AC/">-학습정리</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B0%9C%EB%B0%9C%EB%85%B8%ED%8A%B8/">개발노트</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%ED%95%99%EC%8A%B5%EC%A0%95%EB%A6%AC/">학습정리</a></li></ul>
     </div>
   </div>
 
